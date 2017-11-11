@@ -1,7 +1,7 @@
 # cotacao
 ## Descrição
 
-O site Dados abertos disponibiliza a cotação do Dólar comercial de compra e venda no formato Json. Utilizei html e 
+O site Dados abertos disponibiliza a cotação do Dólar comercial de compra e venda no formato Json. Utilizei html e JavaScript
 
 ## 
 API 
