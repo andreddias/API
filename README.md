@@ -1,4 +1,4 @@
-# Testes de API  
+# API  
 
 Vamos pular a etapa do conceito, mas vou deixar algumas fontes sobre o que é uma API no final da página. O foco aqui é o teste utilizando algumas ferramentas específicas e como utilizar os dados que recebeu em uma aplicação web. 
 
@@ -16,11 +16,11 @@ Passo a passo de como utilizar:
 
 ![example](https://github.com/andreddias/API/blob/master/postman.png)
 
-Você pode realizar os testes da API verificando os dados manualmentem ou automatizar fazendo com que a própria ferramenta verifique se o valor apresentado é o valor esperado, isso é muito bom para realizar um teste de regressão. Na imagem abaixo foi utilizado o SoapUI para conferir os dados automaticamente, vou explicar cada campo.  
-1 - Foi passado um determinado CEP como exemplo.  
-2 - Foram criados cinco asserts testando o valor recebido em cada variável.  
-3 - Mostrando o valor esperado para o campo bairro.  
-4 - Ao clicar no Play retornou o resultado.  
+Você pode realizar os testes da API verificando os dados manualmentem ou automatizar fazendo com que a própria ferramenta verifique se o valor apresentado é o valor esperado, isso é muito bom para realizar um teste de regressão. Na imagem abaixo foi utilizado o SoapUI para conferir os dados automaticamente, vou explicar nesse passo a passo.  
+1 - Foi passado um determinado CEP como exemplo;  
+2 - Foram criados cinco asserts testando o valor recebido em cada variável;  
+3 - Mostrando o valor esperado para o campo bairro;  
+4 - Ao clicar no Play retornou o resultado;  
 5 - Em verde temos a comprovação que esse caso de teste passou.
 
 Neste exemplo mostramos cada campo, mas você pode realizar a regressão de todos os casos de testes de uma única vez sem precisar verificar o resultado, garantido assim que a regressão está funcionando.
