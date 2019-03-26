@@ -4,19 +4,19 @@ Vamos pular a etapa do conceito, mas vou deixar algumas fontes sobre o que é um
 
 ## Como testar a API
 
-Segue um passo a passo de como realizar testes de API, nesse exemplo foram utilizadas duas ferramentas: Postman e SoapUI. O site utilizado para testes foi o dados abertos, site do governo brasileiro que disponibiliza entre outras coisas a cotação de moedas, um bom site para praticar. Você pode escolher a moeda, cotação do dia ou período por exemplo, após selecionar os dados é gerada a url como mostro na imagem abaixo:  
+Segue um passo a passo de como realizar testes de API, nesse exemplo foram utilizadas duas ferramentas: Postman e SoapUI. O site utilizado para testes foi o dados abertos, site do governo brasileiro que disponibiliza entre outras coisas a cotação de moedas, um bom site para praticar. Você pode escolher a moeda, cotação do dia ou período por exemplo, após selecionar os dados é gerada a url como mostro na imagem 1:  
 
-![example](https://github.com/andreddias/API/blob/master/dados.png)
+![example](https://github.com/andreddias/API/blob/master/dados.png) Imagem 1
 
 Passo a passo de como utilizar:  
-1 - Clicar em Copiar a Url;  
+1 - Clicar em Copiar Url (imagem 1);  
 2 - Abrir o Postman;  
-3 - Copiar a URL no espaço em destaque na cor vermelha e clicar em Send;  
-4 - Será retornado o resultado, como mostro na imagem abaixo:  
+3 - Copiar a URL no espaço em destaque na cor vermelha e clicar em Send (imagem 2);  
+4 - Será retornado o resultado, como mostro na imagem 2:  
 
-![example](https://github.com/andreddias/API/blob/master/postman.png)
+![example](https://github.com/andreddias/API/blob/master/postman.png) Imagem 2
 
-Você pode realizar os testes da API verificando os dados manualmentem ou automatizar fazendo com que a própria ferramenta verifique se o valor apresentado é o valor esperado, isso é muito bom para realizar um teste de regressão. Na imagem abaixo foi utilizado o SoapUI para conferir os dados automaticamente, vou explicar nesse passo a passo.  
+Você pode realizar os testes da API verificando os dados manualmentem ou automatizar fazendo com que a própria ferramenta verifique se o valor apresentado é o valor esperado, isso é muito bom para realizar um teste de regressão. Na imagem 2 foi utilizado o SoapUI para conferir os dados automaticamente, vou explicar nesse passo a passo.  
 1 - Foi passado um determinado CEP como exemplo;  
 2 - Foram criados cinco asserts testando o valor recebido em cada variável;  
 3 - Mostrando o valor esperado para o campo bairro;  
