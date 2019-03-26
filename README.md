@@ -21,5 +21,5 @@ No meu [site pessoal](http://andreddias.wixsite.com/home/cambio) demonstro como 
 Site [Dados abertos](http://dados.gov.br/dataset/dolar-americano-usd-todos-os-boletins-diarios)  
 Link Dólar compra: http://dados.gov.br/dataset/10813-taxa-de-cambio-livre-dolar-americano-compra  
 Link Dólar venda: http://dados.gov.br/dataset/1-taxa-de-cambio-livre-dolar-americano-venda-diario  
-Link de outras moedas https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/swagger-ui3#/
-Exemplo disponível no site: http://andreddias.wixsite.com/home/cambio
+Link de outras moedas https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/swagger-ui3#/  
+Exemplo disponível no meu site pessoal: http://andreddias.wixsite.com/home/cambio
