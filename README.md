@@ -1,14 +1,15 @@
-# Utilizando Json e testes de API
+# Testes de API o que é e como os dados são utilizados  
+
 ## Testes de API
 
-Segue um passo a passo de como realizar um teste de API, nesse exemplo foi utilizado o Postman, mas pode ser feito no Soapui ou outras ferramentas.
-O site utilizado para testes foi o dados abertos, do governo brasileiro, que disponibiliza entre outras coisas a cotação de moedas. Você pode escolher a moeda, cotação do dia ou período por exemplo. Após selecionar os dados é gerada uma url como mostro na imagem abaixo:  
+Segue um passo a passo de como realizar um teste de API, nesse exemplo foi utilizada a ferramenta Postman, mas existem outras ferramentas como o Soapui. O site utilizado para testes foi o dados abertos, site do governo brasileiro, que disponibiliza entre outras coisas a cotação de moedas. Você pode escolher a moeda, cotação do dia ou período por exemplo. Após selecionar os dados é gerada uma url como mostro na imagem abaixo:  
 ![example](https://github.com/andreddias/API/blob/master/dados.png)
 
-Clicar em Copiar a Url  
-Abrir o Postman  
-Copiar a URL no espaço em destaque na cor vermelha e clicar em Send  
-Será retornado o resultado, como mostro na imagem abaixo:  
+Passo a passo de como utilizar:
+1 - Clicar em Copiar a Url;  
+2 - Abrir o Postman;  
+3 - Copiar a URL no espaço em destaque na cor vermelha e clicar em Send;  
+4 - Será retornado o resultado, como mostro na imagem abaixo:  
 
 ![example](https://github.com/andreddias/API/blob/master/postman.png)
 
