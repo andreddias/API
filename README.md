@@ -28,7 +28,7 @@ Neste exemplo mostramos cada campo, mas você pode realizar a regressão de todo
 
 ## Como utilizar esses dados coletados da API?
 
-No meu [site pessoal](http://andreddias.wixsite.com/home/cambio) demonstro como utilizar os dados recebidos na API, utilizei como exemplo a cotação do Dólar comercial de compra e venda no formato Json, no site foi utilizado html e JavaScript. 
+No meu [site pessoal](http://andreddias.wixsite.com/home/cambio) demonstro como utilizar os dados recebidos na API, utilizei como exemplo a cotação do Dólar comercial de compra e venda no formato Json, no site foi utilizado html e JavaScript. Você pode ver o código fonte [aqui](cotacoes.html)
 
 ## Fontes:  
 Site do governo: [Dados abertos](http://dados.gov.br/dataset/dolar-americano-usd-todos-os-boletins-diarios)  
