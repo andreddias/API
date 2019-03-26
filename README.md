@@ -1,8 +1,8 @@
-# Testes de API o que é e como os dados são utilizados  
+# Testes de API
 
-## Testes de API
+## Como testar a API
 
-Segue um passo a passo de como realizar um teste de API, nesse exemplo foi utilizada a ferramenta Postman, mas existem outras ferramentas como o Soapui. O site utilizado para testes foi o dados abertos, site do governo brasileiro, que disponibiliza entre outras coisas a cotação de moedas. Você pode escolher a moeda, cotação do dia ou período por exemplo. Após selecionar os dados é gerada uma url como mostro na imagem abaixo:  
+Segue um passo a passo de como realizar um teste de API, nesse exemplo foi utilizada a ferramenta Postman, mas existem outras ferramentas como o Soapui. O site utilizado para testes foi o dados abertos, site do governo brasileiro, que disponibiliza entre outras coisas a cotação de moedas. Você pode escolher a moeda, cotação do dia ou período por exemplo, após selecionar os dados é gerada a url como mostro na imagem abaixo:  
 
 ![example](https://github.com/andreddias/API/blob/master/dados.png)
 
@@ -14,9 +14,11 @@ Passo a passo de como utilizar:
 
 ![example](https://github.com/andreddias/API/blob/master/postman.png)
 
+Você pode realizar os testes da API verificando os dados manualmentem ou automatizar fazendo com que a própria ferramenta verifique se o valor apresentado é o valor esperado.  
+
 ## Como utilizar esses dados coletados da API?
 
-No meu [site pessoal](http://andreddias.wixsite.com/home/cambio) demonstro como utilizar os dados recebidos na API, utilizei como exemplo a cotação do Dólar comercial de compra e venda no formato Json. No site foi utilizado html e JavaScript.
+No meu [site pessoal](http://andreddias.wixsite.com/home/cambio) demonstro como utilizar os dados recebidos na API, utilizei como exemplo a cotação do Dólar comercial de compra e venda no formato Json, no site foi utilizado html e JavaScript. 
 
 ## Fonte  
 Site do governo: [Dados abertos](http://dados.gov.br/dataset/dolar-americano-usd-todos-os-boletins-diarios)  
