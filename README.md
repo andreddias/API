@@ -4,7 +4,7 @@ Vamos pular a etapa do conceito, mas vou deixar algumas fontes sobre o que é um
 
 ## Como testar a API
 
-Segue um passo a passo de como realizar testes de API, nesse exemplo foram utilizadas duas ferramentas: Postman e SoapUI. O site utilizado para testes foi o dados abertos, site do governo brasileiro que disponibiliza entre outras coisas a cotação de moedas, um bom site para praticar. Você pode escolher a moeda, cotação do dia ou período por exemplo, após selecionar os dados é gerada a url como mostro na imagem abaixo:  
+Segue um passo a passo de como realizar testes de API, nesse exemplo foram utilizadas duas ferramentas: Postman e SoapUI. O site utilizado para testes foi o [dados abertos](http://dados.gov.br/dataset), site do governo brasileiro que disponibiliza entre outras coisas a cotação de moedas, sendo assim um bom site para praticar. Você pode escolher a moeda, cotação do dia ou período por exemplo, após selecionar os dados é gerada a url como mostro na imagem abaixo:  
 
 ![example](https://github.com/andreddias/API/blob/master/dados.png) 
 
@@ -31,7 +31,7 @@ Neste exemplo mostramos cada campo, mas você pode realizar a regressão de todo
 No meu [site pessoal](http://andreddias.wixsite.com/home/cambio) demonstro como utilizar os dados recebidos na API, utilizei como exemplo a cotação do Dólar comercial de compra e venda no formato Json, no site foi utilizado html e JavaScript. Você pode ver o código fonte [aqui](cotacoes.html)
 
 ## Fontes:  
-Site [Dados abertos](http://dados.gov.br/dataset) do governo:  
+Urls utilizadas do site Dados abertos do governo:  
 [Cotação de qualquer moeda](https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/swagger-ui3#/)  
 [Cotação dólar](http://dados.gov.br/dataset/dolar-americano-usd-todos-os-boletins-diarios)  
 Link Dólar compra: http://dados.gov.br/dataset/10813-taxa-de-cambio-livre-dolar-americano-compra  
