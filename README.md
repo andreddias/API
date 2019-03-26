@@ -2,7 +2,7 @@
 
 ## Como testar a API
 
-Segue um passo a passo de como realizar um teste de API, nesse exemplo foi utilizada a ferramenta Postman, mas existem outras ferramentas como o Soapui. O site utilizado para testes foi o dados abertos, site do governo brasileiro, que disponibiliza entre outras coisas a cotação de moedas. Você pode escolher a moeda, cotação do dia ou período por exemplo, após selecionar os dados é gerada a url como mostro na imagem abaixo:  
+Segue um passo a passo de como realizar testes de API, nesse exemplo foram utilizadas duas ferramentas por questão de aprendizado: Postman e SoapUI. O site utilizado para testes foi o dados abertos, site do governo brasileiro que disponibiliza entre outras coisas a cotação de moedas, um bom site para praticar. Você pode escolher a moeda, cotação do dia ou período por exemplo, após selecionar os dados é gerada a url como mostro na imagem abaixo:  
 
 ![example](https://github.com/andreddias/API/blob/master/dados.png)
 
@@ -14,13 +14,14 @@ Passo a passo de como utilizar:
 
 ![example](https://github.com/andreddias/API/blob/master/postman.png)
 
-Você pode realizar os testes da API verificando os dados manualmentem ou automatizar fazendo com que a própria ferramenta verifique se o valor apresentado é o valor esperado. Na imagem abaixo foi utilizado o SoapUI para conferir os dados automaticamente, vou explicar cada campo.  
+Você pode realizar os testes da API verificando os dados manualmentem ou automatizar fazendo com que a própria ferramenta verifique se o valor apresentado é o valor esperado, isso é muito bom para realizar um teste de regressão. Na imagem abaixo foi utilizado o SoapUI para conferir os dados automaticamente, vou explicar cada campo.  
 1 - Foi passado um determinado CEP como exemplo.  
-2 - Foram criados cinco asserts testando o valor recebido em cada campo.  
-3 - Valor esperado.  
-4 - Resultado retornado.  
-5 - Em verde o teste passou.
+2 - Foram criados cinco asserts testando o valor recebido em cada variável.  
+3 - Mostrando o valor esperado para o campo bairro.  
+4 - Ao clicar no Play retornou o resultado.  
+5 - Em verde temos a comprovação que esse caso de teste passou.
 
+Neste exemplo mostramos cada campo, mas você pode realizar a regressão de todos os casos de testes de uma única vez sem precisar verificar o resultado, garantido assim que a regressão está funcionando.
 ![example](https://github.com/andreddias/API/blob/master/soapUI.png)
 
 ## Como utilizar esses dados coletados da API?
