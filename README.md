@@ -14,7 +14,9 @@ Passo a passo de como utilizar:
 
 ![example](https://github.com/andreddias/API/blob/master/postman.png)
 
-Você pode realizar os testes da API verificando os dados manualmentem ou automatizar fazendo com que a própria ferramenta verifique se o valor apresentado é o valor esperado.  
+Você pode realizar os testes da API verificando os dados manualmentem ou automatizar fazendo com que a própria ferramenta verifique se o valor apresentado é o valor esperado. Na imagem abaixo foi utilizado o SoapUI para conferir os dados automaticamente, foram passados os resultados esperados ao informar um determinado CEP
+
+![example](https://github.com/andreddias/API/blob/master/soapUI.png)
 
 ## Como utilizar esses dados coletados da API?
 
