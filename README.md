@@ -4,7 +4,7 @@ Vamos pular a etapa do conceito, mas vou deixar algumas fontes sobre o que é um
 
 ## Como testar a API
 
-Segue um passo a passo de como realizar testes de API, nesse exemplo foram utilizadas duas ferramentas: Postman e SoapUI. O site utilizado para testes foi o dados abertos, site do governo brasileiro que disponibiliza entre outras coisas a cotação de moedas, um bom site para praticar. Você pode escolher a moeda, cotação do dia ou período por exemplo, após selecionar os dados é gerada a url como mostro na imagem 1:  
+Segue um passo a passo de como realizar testes de API, nesse exemplo foram utilizadas duas ferramentas: Postman e SoapUI. O site utilizado para testes foi o dados abertos, site do governo brasileiro que disponibiliza entre outras coisas a cotação de moedas, um bom site para praticar. Você pode escolher a moeda, cotação do dia ou período por exemplo, após selecionar os dados é gerada a url como mostro na imagem abaixo:  
 
 ![example](https://github.com/andreddias/API/blob/master/dados.png) 
 
@@ -21,7 +21,7 @@ Você pode realizar os testes da API verificando os dados manualmentem ou automa
 2 - Foram criados cinco asserts testando o valor recebido em cada variável;  
 3 - Mostrando o valor esperado para o campo bairro;  
 4 - Ao clicar no Play retornou o resultado;  
-5 - Em verde temos a comprovação que esse caso de teste passou.
+5 - Em verde temos a comprovação que esse caso de teste passou.  
 
 Neste exemplo mostramos cada campo, mas você pode realizar a regressão de todos os casos de testes de uma única vez sem precisar verificar o resultado, porque com os asserts você está garantido que o valor recebido é igual ao resultado esperado, garantindo assim que o teste de regressão passou.
 ![example](https://github.com/andreddias/API/blob/master/soapUI.png)
