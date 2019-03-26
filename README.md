@@ -31,7 +31,9 @@ Neste exemplo mostramos cada campo, mas você pode realizar a regressão de todo
 No meu [site pessoal](http://andreddias.wixsite.com/home/cambio) demonstro como utilizar os dados recebidos na API, utilizei como exemplo a cotação do Dólar comercial de compra e venda no formato Json, no site foi utilizado html e JavaScript. Você pode ver o código fonte [aqui](cotacoes.html)
 
 ## Fontes:  
-Site do governo: [Dados abertos](http://dados.gov.br/dataset/dolar-americano-usd-todos-os-boletins-diarios)  
+Site Dados abertos do governo:  
+[Cotação de qualquer moeda](https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/swagger-ui3#/)  
+[Cotação dólar](http://dados.gov.br/dataset/dolar-americano-usd-todos-os-boletins-diarios)  
 Link Dólar compra: http://dados.gov.br/dataset/10813-taxa-de-cambio-livre-dolar-americano-compra  
 Link Dólar venda: http://dados.gov.br/dataset/1-taxa-de-cambio-livre-dolar-americano-venda-diario  
 Link de outras moedas: https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/swagger-ui3#/  
