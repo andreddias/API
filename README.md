@@ -1,8 +1,10 @@
-# Testes de API
+# Testes de API  
+
+Vamos pular a etapa do conceito, mas vou deixar algumas fontes sobre o que é uma API no final da página. O foco aqui é o teste utilizando algumas ferramentas específicas e como utilizar os dados que recebeu em uma aplicação web. 
 
 ## Como testar a API
 
-Segue um passo a passo de como realizar testes de API, nesse exemplo foram utilizadas duas ferramentas por questão de aprendizado: Postman e SoapUI. O site utilizado para testes foi o dados abertos, site do governo brasileiro que disponibiliza entre outras coisas a cotação de moedas, um bom site para praticar. Você pode escolher a moeda, cotação do dia ou período por exemplo, após selecionar os dados é gerada a url como mostro na imagem abaixo:  
+Segue um passo a passo de como realizar testes de API, nesse exemplo foram utilizadas duas ferramentas: Postman e SoapUI. O site utilizado para testes foi o dados abertos, site do governo brasileiro que disponibiliza entre outras coisas a cotação de moedas, um bom site para praticar. Você pode escolher a moeda, cotação do dia ou período por exemplo, após selecionar os dados é gerada a url como mostro na imagem abaixo:  
 
 ![example](https://github.com/andreddias/API/blob/master/dados.png)
 
@@ -33,4 +35,5 @@ Site do governo: [Dados abertos](http://dados.gov.br/dataset/dolar-americano-usd
 Link Dólar compra: http://dados.gov.br/dataset/10813-taxa-de-cambio-livre-dolar-americano-compra  
 Link Dólar venda: http://dados.gov.br/dataset/1-taxa-de-cambio-livre-dolar-americano-venda-diario  
 Link de outras moedas: https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/swagger-ui3#/  
-Exemplo disponível no site: http://andreddias.wixsite.com/home/cambio
+Exemplo disponível no site: http://andreddias.wixsite.com/home/cambio  
+O que é uma API? [link1](https://vertigo.com.br/o-que-e-api-entenda-de-uma-maneira-simples/), [link2](https://pt.wikipedia.org/wiki/Interface_de_programa%C3%A7%C3%A3o_de_aplica%C3%A7%C3%B5es) e [link3](https://canaltech.com.br/software/o-que-e-api/)
