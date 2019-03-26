@@ -32,8 +32,8 @@ No meu [site pessoal](http://andreddias.wixsite.com/home/cambio) demonstro como 
 
 ## Fontes:  
 Urls utilizadas do site Dados abertos do governo:  
-[Cotação de qualquer moeda](https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/swagger-ui3#/)  
-[Cotação dólar](http://dados.gov.br/dataset/dolar-americano-usd-todos-os-boletins-diarios)  
+[Cotação de qualquer moeda](https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/swagger-ui3#/) utilizado em "Como testar a API"  
+[Cotação dólar](http://dados.gov.br/dataset/dolar-americano-usd-todos-os-boletins-diarios) utilizado em "Como utilizar esses dados coletados da API?"  
 Link Dólar compra: http://dados.gov.br/dataset/10813-taxa-de-cambio-livre-dolar-americano-compra  
 Link Dólar venda: http://dados.gov.br/dataset/1-taxa-de-cambio-livre-dolar-americano-venda-diario  
 Link de outras moedas: https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/swagger-ui3#/  
