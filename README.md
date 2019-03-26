@@ -6,15 +6,15 @@ Vamos pular a etapa do conceito, mas vou deixar algumas fontes sobre o que é um
 
 Segue um passo a passo de como realizar testes de API, nesse exemplo foram utilizadas duas ferramentas: Postman e SoapUI. O site utilizado para testes foi o dados abertos, site do governo brasileiro que disponibiliza entre outras coisas a cotação de moedas, um bom site para praticar. Você pode escolher a moeda, cotação do dia ou período por exemplo, após selecionar os dados é gerada a url como mostro na imagem 1:  
 
-![example](https://github.com/andreddias/API/blob/master/dados.png) Imagem 1
+![example](https://github.com/andreddias/API/blob/master/dados.png) 
 
 Passo a passo de como utilizar:  
-1 - Clicar em Copiar Url (imagem 1);  
+1 - Clicar em Copiar URL;  
 2 - Abrir o Postman;  
 3 - Copiar a URL no espaço em destaque na cor vermelha e clicar em Send (imagem 2);  
 4 - Será retornado o resultado, como mostro na imagem 2:  
 
-![example](https://github.com/andreddias/API/blob/master/postman.png) Imagem 2
+![example](https://github.com/andreddias/API/blob/master/postman.png) 
 
 Você pode realizar os testes da API verificando os dados manualmentem ou automatizar fazendo com que a própria ferramenta verifique se o valor apresentado é o valor esperado, isso é muito bom para realizar um teste de regressão. Na imagem 2 foi utilizado o SoapUI para conferir os dados automaticamente, vou explicar nesse passo a passo.  
 1 - Foi passado um determinado CEP como exemplo;  
@@ -23,7 +23,7 @@ Você pode realizar os testes da API verificando os dados manualmentem ou automa
 4 - Ao clicar no Play retornou o resultado;  
 5 - Em verde temos a comprovação que esse caso de teste passou.
 
-Neste exemplo mostramos cada campo, mas você pode realizar a regressão de todos os casos de testes de uma única vez sem precisar verificar o resultado, garantido assim que a regressão está funcionando.
+Neste exemplo mostramos cada campo, mas você pode realizar a regressão de todos os casos de testes de uma única vez sem precisar verificar o resultado, porque com os asserts você está garantido que o valor recebido é igual ao resultado esperado, garantindo assim que o teste de regressão passou.
 ![example](https://github.com/andreddias/API/blob/master/soapUI.png)
 
 ## Como utilizar esses dados coletados da API?
