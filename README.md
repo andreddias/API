@@ -1,6 +1,6 @@
 # API  
 
-Vamos pular a etapa do conceito, mas vou deixar algumas fontes sobre o que é uma API no final da página. O foco aqui é o teste utilizando algumas ferramentas específicas e como utilizar os dados que recebeu em uma aplicação web. 
+Vamos pular a etapa do conceito, mas vou deixar algumas fontes sobre o que é uma API no final da página. O foco aqui é testar uma API (back-end) com algumas ferramentas específicas e utilizar os dados que recebeu em uma aplicação web (dados da API servindo ao front-end). 
 
 ## Como testar a API
 
@@ -26,9 +26,9 @@ Você pode realizar os testes da API verificando os dados manualmentem ou automa
 Neste exemplo mostramos cada campo, mas você pode realizar a regressão de todos os casos de testes de uma única vez sem precisar verificar o resultado, porque com os asserts você está garantido que o valor recebido é igual ao resultado esperado, garantindo assim que o teste de regressão passou.
 ![example](https://github.com/andreddias/API/blob/master/soapUI.png)
 
-## Como utilizar esses dados coletados da API?
+## Criando uma aplicação front-end
 
-No meu [site pessoal](http://andreddias.wixsite.com/home/cambio) demonstro como utilizar os dados recebidos na API, utilizei como exemplo a cotação do Dólar comercial de compra e venda no formato Json, no site foi utilizado html e JavaScript. Você pode ver o código fonte [aqui](cotacoes.html)
+No meu [site pessoal](http://andreddias.wixsite.com/home/cambio) demonstro como utilizar os dados recebidos na API, utilizei como exemplo a cotação do Dólar comercial de compra e venda no formato Json, no site foi utilizado html e JavaScript para receber os dados. Você pode ver o código fonte [aqui](cotacoes.html)
 
 ## Fontes:  
 Urls utilizadas do site Dados abertos do governo:  
