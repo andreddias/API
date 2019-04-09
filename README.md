@@ -2,7 +2,7 @@
 
 Vamos pular a etapa do conceito, mas vou deixar algumas fontes sobre o que é uma API no final da página. O foco aqui é testar uma API (back-end) com algumas ferramentas específicas e utilizar os dados que recebeu em uma aplicação web (dados da API servindo ao front-end). 
 
-## Como testar a API
+## Como testar uma API
 
 Segue um passo a passo de como realizar testes de API, nesse exemplo foram utilizadas duas ferramentas: Postman e SoapUI. O site utilizado para testes foi o [dados abertos](http://dados.gov.br/dataset), site do governo brasileiro que disponibiliza entre outras coisas a cotação de moedas, sendo assim um bom site para praticar. Você pode escolher a moeda, cotação do dia ou período por exemplo, após selecionar os dados é gerada a url como mostro na imagem abaixo:  
 
