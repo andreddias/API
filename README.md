@@ -1,6 +1,6 @@
-# API  
+# API (back-end e front-end) 
 
-O foco aqui é testar uma API (back-end) com algumas ferramentas específicas e utilizar os dados que recebeu em uma aplicação web (dados da API servindo ao front-end). 
+O foco aqui é testar uma API (back-end) com algumas ferramentas específicas utilizando os dados que recebeu em uma aplicação web (dados da API servindo ao front-end). 
 
 ## Testando uma API
 
