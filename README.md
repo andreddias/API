@@ -1,6 +1,7 @@
-# API (back-end e front-end) 
+# O que são APIs? 
 
-O foco aqui é testar uma API (back-end) com algumas ferramentas específicas utilizando os dados que recebeu em uma aplicação web (dados da API servindo ao front-end). 
+Uma interface de programação de aplicações (API) é um conjunto de ferramentas, definições e protocolos para criar e integrar softwares de aplicações. Com ela, sua solução ou serviço pode se comunicar com outras soluções e serviços sem precisar saber como eles foram implementados. As APIs simplificam o desenvolvimento de aplicações, gerando economia de tempo e dinheiro para as empresas. Ao projetar novas ferramentas e soluções (ou gerenciar as atuais), as APIs oferecem a flexibilidade necessária, simplifica o design, a administração e o uso, além de fornecer oportunidades de inovação.
+Fonte: redhat.com
 
 ## Testando uma API
 
