@@ -34,11 +34,12 @@ No meu [site pessoal](http://andreddias.wixsite.com/home/cambio) demonstro como 
 Em um outro exemplo foi criado o site [saudelisboa](http://saudelisboa.wixsite.com/meusite) que retorna os dados abertos de Lisboa referente a saúde, [aqui](http://lisboaaberta.cm-lisboa.pt/index.php/pt/) você pode ver todos os dados abertos disponíveis, com este site você pode realizar seu primeiro teste de uma API.
 
 ## Fontes:  
-Urls utilizadas do site Dados abertos do governo:  
+#### Urls utilizadas do site Dados abertos do governo brasileiro:  
 [Cotação de qualquer moeda](https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/swagger-ui3#/) utilizado em "Como testar a API"  
 [Cotação dólar](http://dados.gov.br/dataset/dolar-americano-usd-todos-os-boletins-diarios) utilizado em "Como utilizar esses dados coletados da API?"  
 Exemplo disponível no meu [site pessoal](http://andreddias.wixsite.com/home/cambio ) 
 
+#### Urls utilizadas no site Lisboa aberta do governo português:
 Site [saudelisboa](http://saudelisboa.wixsite.com/meusite)
 Fonte dos dados do site saúde [Lisboaaberta](http://lisboaaberta.cm-lisboa.pt/index.php/pt/saude)
 
