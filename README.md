@@ -22,7 +22,7 @@ Você pode realizar os testes da API verificando os dados manualmentem ou automa
 2 - Foram criados cinco asserts testando o valor recebido em cada variável;  
 3 - Mostrando o valor esperado para o campo bairro;  
 4 - Ao clicar no Play retornou o resultado;  
-5 - Em verde temos a comprovação que esse caso de teste passou.  
+5 - Em verde temos a comprovação que esse caso de teste passou. Quando informamos o CEP 24130223, o resultado esperado no passo 2 para o campo bairro "Fonseca" foi o valor retornado no passo 4. 
 
 Neste exemplo mostramos cada campo, mas você pode realizar a regressão de todos os casos de testes de uma única vez sem precisar verificar o resultado, porque com os asserts você está garantido que o valor recebido é igual ao resultado esperado, garantindo assim que o teste de regressão passou.
 ![example](https://github.com/andreddias/API/blob/master/soapUI.png)
@@ -31,11 +31,15 @@ Neste exemplo mostramos cada campo, mas você pode realizar a regressão de todo
 
 No meu [site pessoal](http://andreddias.wixsite.com/home/cambio) demonstro como utilizar os dados recebidos na API, utilizei como exemplo a cotação do Dólar comercial de compra e venda no formato Json, no site foi utilizado html e JavaScript para receber os dados. Você pode ver o código fonte [aqui](cotacoes.html)
 
+Em um outro exemplo foi criado o site [saudelisboa](http://saudelisboa.wixsite.com/meusite) que retorna os dados abertos de Lisboa referente a saúde, [aqui](http://lisboaaberta.cm-lisboa.pt/index.php/pt/) você pode ver todos os dados abertos disponíveis, com este site você pode realizar seu primeiro teste de uma API.
+
 ## Fontes:  
 Urls utilizadas do site Dados abertos do governo:  
 [Cotação de qualquer moeda](https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/swagger-ui3#/) utilizado em "Como testar a API"  
 [Cotação dólar](http://dados.gov.br/dataset/dolar-americano-usd-todos-os-boletins-diarios) utilizado em "Como utilizar esses dados coletados da API?"  
 Link Dólar compra: http://dados.gov.br/dataset/10813-taxa-de-cambio-livre-dolar-americano-compra  
 Link Dólar venda: http://dados.gov.br/dataset/1-taxa-de-cambio-livre-dolar-americano-venda-diario  
-Exemplo disponível no site: http://andreddias.wixsite.com/home/cambio  
+Exemplo disponível no site: http://andreddias.wixsite.com/home/cambio 
+Site [saudelisboa](http://saudelisboa.wixsite.com/meusite)
+Fonte dos dados do site saúde [Lisboaaberta](http://lisboaaberta.cm-lisboa.pt/index.php/pt/saude)
 O que é uma API? [link1](https://vertigo.com.br/o-que-e-api-entenda-de-uma-maneira-simples/), [link2](https://blog.caelum.com.br/rest-principios-e-boas-praticas/), [link3](https://becode.com.br/o-que-e-api-rest-e-restful/), [link4](https://canaltech.com.br/software/o-que-e-api/) e por último a definição utilizada no início pela [Redhat](https://www.redhat.com/pt-br/topics/api/what-are-application-programming-interfaces)
