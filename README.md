@@ -37,9 +37,10 @@ Em um outro exemplo foi criado o site [saudelisboa](http://saudelisboa.wixsite.c
 Urls utilizadas do site Dados abertos do governo:  
 [Cotação de qualquer moeda](https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/swagger-ui3#/) utilizado em "Como testar a API"  
 [Cotação dólar](http://dados.gov.br/dataset/dolar-americano-usd-todos-os-boletins-diarios) utilizado em "Como utilizar esses dados coletados da API?"  
-Link Dólar compra: http://dados.gov.br/dataset/10813-taxa-de-cambio-livre-dolar-americano-compra  
-Link Dólar venda: http://dados.gov.br/dataset/1-taxa-de-cambio-livre-dolar-americano-venda-diario  
 Exemplo disponível no meu [site pessoal](http://andreddias.wixsite.com/home/cambio ) 
+
 Site [saudelisboa](http://saudelisboa.wixsite.com/meusite)
+
 Fonte dos dados do site saúde [Lisboaaberta](http://lisboaaberta.cm-lisboa.pt/index.php/pt/saude)
+
 O que é uma API? [link1](https://vertigo.com.br/o-que-e-api-entenda-de-uma-maneira-simples/), [link2](https://blog.caelum.com.br/rest-principios-e-boas-praticas/), [link3](https://becode.com.br/o-que-e-api-rest-e-restful/), [link4](https://canaltech.com.br/software/o-que-e-api/) e por último a definição utilizada no início pela [Redhat](https://www.redhat.com/pt-br/topics/api/what-are-application-programming-interfaces)
