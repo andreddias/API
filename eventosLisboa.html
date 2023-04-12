@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Agenda Cultural de Lisboa</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		
+		header {
+			background-color: #003399;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		
+		h1 {
+			margin: 0;
+		}
+		
+		button {
+			background-color: #003399;
+			border: none;
+			color: #fff;
+			cursor: pointer;
+			padding: 10px 20px;
+			margin-top: 20px;
+		}
+		
+		button:hover {
+			background-color: #0059b3;
+		}
+		
+		#eventos {
+			margin: 20px;
+		}
+		
+		h2 {
+			font-size: 24px;
+			margin: 0 0 10px;
+		}
+		
+		img {
+			display: block;
+			margin: 0 auto;
+			max-width: 100%;
+			height: auto;
+		}
+		
+		p {
+			margin: 0;
+			padding: 10px 0;
+		}
+		
+		hr {
+			border: none;
+			border-top: 1px solid #ccc;
+			margin: 20px 0;
+		}
+		
+  #anterior, #proximo {
+    display: block;
+    margin: 0 auto;
+  }
+
+
+  #anterior {
+    margin-left: 10px;
+  }
+
+  #proximo {
+    margin-right: 10px;
+  }
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Agenda Cultural de Lisboa</h1>
+		<p>Confira abaixo os eventos em destaque na cidade.</p>
+	</header>
+	<div id="eventos"></div>
+	<button id="anterior">Anterior</button>
+	<button id="proximo">Próximo</button>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$.ajax({
+				url: 'https://www.agendalx.pt/wp-json/agendalx/v1/events',
+				type: 'GET',
+				dataType: 'json',
+				success: function(data) {
+
+					if(data && data.length > 0) {
+						var eventos = data;
+						var html = '';
+
+						var currentIndex = 0;
+						var pageSize = 1; // Quantidade de eventos exibidos por página
+
+						function showEvent() {
+							var evento = eventos[currentIndex];
+							html = '<h2>' + evento.title.rendered + '</h2>';
+							html += '<p style="text-align: center;">Período: ' + evento.string_dates[0] + '</p>';
+							html += '<img src="' + evento.featured_media_large + '" style="width: 20%;">';
+							html += '<p><strong>Descrição:</strong> ' + evento.description[0] + '</p>';
+							html += '<a href="' + evento.link + '" target="_blank">Ver detalhes</a>'; // Modificação aqui
+							html += '<hr>';
+
+							$('#eventos').html(html);
+						}
+
+						$('#anterior').click(function() {
+							if(currentIndex > 0) {
+								currentIndex -= pageSize;
+								showEvent();
+							}
+						});
+
+						$('#proximo').click(function() {
+							if(currentIndex < eventos.length - pageSize) {
+								currentIndex += pageSize;
+								showEvent();
+							}
+						});
+
+						showEvent();
+					} else {
+						$('#eventos').html('Nenhum evento encontrado.');
+					}
+				},
+				error: function() {
+					$('#eventos').html('Erro ao carregar eventos.');
+				}
+			});
+		 });
+	</script>
+</head>
+</html>
