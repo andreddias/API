@@ -1,0 +1,172 @@
+<html lang="pt-br">
+
+<head>
+    <title>Encontre o centro de saúde</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Encontre o centro de saúde que deseja">
+    <meta name="keywords" content="Centro de saúde">
+
+    <body>
+        <p id="hoje"></p>
+        <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Health Centers in Lisbon">
+      <h3>Centros de saúde em Lisboa</h3>
+    </span>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <label for="freguesia">Escolha a freguesia:</label>
+        <div>
+            <select name="selectFreguesia" id="selectFreguesia" onchange="freguesiaSelecionada();">
+            </select>
+        </div>
+        </br>
+        <table id="tabela" class="table table-striped">
+            <div class="col-md-6">
+                <th>atividade</th>
+                <th>tipo</th>
+                <th width="400">morada</th>
+            </div>
+        </table>
+        <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Limpe a pesquisa">
+    <button class="btn btn-primary" id="BtnCurtir" onchange="atualizaPagina();" style="pointer-events: none;" type="button" disabled>Atualizar</button>
+    </span>
+        <style>
+            body {
+                width: 100%;
+                background: lightblue;
+                margin-top: 2%;
+                margin-left: 2%;
+            }
+        </style>
+        <script language="JavaScript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            var url = "https://services.arcgis.com/1dSrzEWVQn5kHHyK/ArcGIS/rest/services/POISaude/FeatureServer/0/query?where=1%3D1&outFields=*&f=pgeojson";
+
+            var hoje = dataAtual();
+
+            $("#hoje").append("Hoje é " + hoje + "<br>");
+
+            var freguesias = ["Alvalade", "Avenidas Novas", "Alcântara", "Ajuda", "Arroios", "Areeiro", "Ajuda", "Belém", "Benfica", "Campo de Ourique", "Carnide", "Campolide", "Estrela", "Lumiar", "Olivais", "Marvila", "Misericórdia", "Olivais", "Penha de França", "Santo António", "São Vicente", "São Domingos de Benfica", "Santa Maria Maior"];
+
+            $('#selectFreguesia').empty();
+
+            $('#selectFreguesia').append('<option selected="true" disabled>Escolha a freguesia</option>');
+
+            $.each(freguesias, function(i, p) {
+
+                $('#selectFreguesia').append($('<option></option>').val(p).html(p));
+
+            });
+
+            function freguesiaSelecionada() {
+
+                if (selectFreguesia.selectedIndex != 0) {
+
+                    var freguesia = document.getElementById("selectFreguesia").value;
+
+                    $.getJSON(url, function(data) {
+
+                        $.each(data, function(key, value) {
+
+                            //var valor = JSON.stringify(value);
+
+                            carregarCombo(value, freguesia);
+
+                        });
+
+                    });
+
+                }
+
+            }
+
+            function carregarCombo(value, freguesia) {
+
+                if (typeof value === "string") {
+
+                    return undefined;
+
+                }
+
+                for (var i = 0; i < value.length; i++) {
+
+                    //return value[0];            
+
+                    var coordenadas = value[i].geometry.coordinates;
+
+                    ////http://www.linhadecodigo.com.br/artigo/3653/usando-geolocalizacao-com-html5.aspx
+
+                    //var freguesia = value[i].properties.FREGUESIA; 
+
+                    var atividade = value[i].properties.ACTIVIDADE_NOME;
+
+                    var tipoAtividade = value[i].properties.TIPO_ACTIVIDADE;
+
+                    var morada = value[i].properties.MORADA;
+
+                    if (freguesia === value[i].properties.FREGUESIA) {
+
+                        console.log(coordenadas);
+
+                        $("#tabela").append('<tr><td>' + atividade + '</td><td>' + tipoAtividade + '</td><td>' + morada + '</td></tr>');
+
+                    };
+
+                }
+
+                habilitaBotao();
+
+            }
+
+            function dataAtual() {
+
+                var hoje = new Date();
+                var dd = hoje.getDate();
+                var mm = hoje.getMonth() + 1; //January is 0!
+                var yyyy = hoje.getFullYear();
+                var dia = hoje.getDay();
+                var semana = new Array(6);
+                semana[0] = 'Domingo';
+                semana[1] = 'Segunda-Feira';
+                semana[2] = 'Terça-Feira';
+                semana[3] = 'Quarta-Feira';
+                semana[4] = 'Quinta-Feira';
+                semana[5] = 'Sexta-Feira';
+                semana[6] = 'Sábado';
+                diaSemana = semana[dia];
+
+                if (dd < 10) {
+
+                    dd = '0' + dd
+
+                }
+
+                if (mm < 10) {
+
+                    mm = '0' + mm
+
+                }
+
+                hoje = dd + '/' + mm + '/' + yyyy;
+
+                var hoje = diaSemana + " dia " + hoje;
+
+                return hoje;
+
+            }
+
+            function habilitaBotao() {
+
+                document.getElementById("BtnCurtir").disabled = false;
+
+            }
+
+            function atualizaPagina() {
+
+                window.location.reload();
+                //document.getElementById("tabela").reset();
+
+            }
+        </script>
+    </body>
+</head>
+
+</html>

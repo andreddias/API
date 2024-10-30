@@ -1,0 +1,135 @@
+<html lang="pt-br">
+
+<head>
+    <title>Encontre a farmácia</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Encontre a farmácia que deseja">
+    <meta name="keywords" content="Farmacias Parafarmacias Farmácias Parafarmácias">
+
+    <body>
+	<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Drugstores in Lisbon">
+        <h3>Farmácias e Parafarmácias</h3>
+    </span>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <p id="hoje"></p>
+        <div>
+            <select id="farmacia" name="farmacia" onchange="farmaciaSelecionada();">
+            </select>
+        </div>
+        </br>
+        </br>
+
+        <section>
+        </section>
+        <script language="JavaScript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            var url = "https://services.arcgis.com/1dSrzEWVQn5kHHyK/arcgis/rest/services/POISaude/FeatureServer/1/query?where=1%3D1&outFields=*&f=pgeojson";
+            var hoje = dataAtual();
+            var section = document.querySelector('section');
+
+            let dropFarmacia = $("#farmacia");
+            dropFarmacia.empty();
+            dropFarmacia.append('<option selected="true" disabled>Escolha a farmacia</option>');
+            dropFarmacia.prop('selectedIndex', 0);
+
+            $.getJSON(url, function(data) {
+                $.each(data, function(key, value) {
+                    carregarCombo(value);
+                });
+            });
+
+            function carregarCombo(value) {
+                if (typeof value === "string") {
+                    return undefined;
+                }
+                for (var i = 0; i < value.length; i++) {
+                    var farmacias = value[i].properties.INF_NOME;
+                    //return value[0];            
+                    //value[0].geometry
+                    dropFarmacia.append($('<option></option>').text(farmacias));
+                }
+            };
+
+            function dataAtual() {
+                var hoje = new Date();
+                var dd = hoje.getDate();
+                var mm = hoje.getMonth() + 1; //January is 0!
+                var yyyy = hoje.getFullYear();
+                var dia = hoje.getDay();
+                var semana = new Array(6);
+                semana[0] = 'Domingo';
+                semana[1] = 'Segunda-Feira';
+                semana[2] = 'Terça-Feira';
+                semana[3] = 'Quarta-Feira';
+                semana[4] = 'Quinta-Feira';
+                semana[5] = 'Sexta-Feira';
+                semana[6] = 'Sábado';
+                diaSemana = semana[dia];
+                if (dd < 10) {
+                    dd = '0' + dd
+                }
+                if (mm < 10) {
+                    mm = '0' + mm
+                }
+                hoje = dd + '/' + mm + '/' + yyyy;
+                var hoje = diaSemana + " dia " + hoje;
+                return hoje;
+            }
+
+            function farmaciaSelecionada() {
+
+                //dropFarmacia.prop('selectedIndex', 0);
+                if (dropFarmacia.selectedIndex != 0) {
+                    var farmacia = document.getElementById("farmacia").value;
+                    $.getJSON(url, function(data) {
+                        $.each(data, function(key, value) {
+                            carregarDadosFarmacia(value, farmacia)
+
+                        });
+                    });
+                }
+
+                function carregarDadosFarmacia(value, farmacia) {
+                    if (typeof value === "string") {
+                        return undefined;
+                    }
+                    for (var i = 0; i < value.length; i++) {
+                        if (farmacia === value[i].properties.INF_NOME) {
+
+                            var listItem = document.createElement('lista');
+                            var myH2 = document.createElement('h2');
+                            var morada = document.createElement('p');
+                            var tel = document.createElement('p');
+                            var mail = document.createElement('p');
+                            var descricao = document.createElement('p');
+                            var site = document.createElement('p');
+                            var fonte = document.createElement('p');
+
+                            myH2.textContent = value[i].properties.INF_NOME;
+                            morada.textContent = 'Morada: ' + value[i].properties.INF_MORADA;
+                            tel.textContent = 'Telefone: ' + value[i].properties.INF_TELEFONE;
+                            mail.textContent = 'E-mail: ' + value[i].properties.INF_EMAIL;
+                            descricao.textContent = 'Descrição: ' + value[i].properties.INF_DESCRICAO;
+                            site.textContent = 'Site: ' + value[i].properties.INF_SITE;
+                            fonte.textContent = 'Fonte: ' + value[i].properties.INF_FONTE;
+
+                            listItem.appendChild(myH2);
+                            listItem.appendChild(morada);
+                            listItem.appendChild(tel);
+                            listItem.appendChild(mail);
+                            listItem.appendChild(descricao);
+                            listItem.appendChild(site);
+                            listItem.appendChild(fonte);
+                            section.appendChild(listItem);
+                        }
+
+                    }
+
+                }
+
+            }
+        </script>
+    </body>
+</head>
+
+</html>

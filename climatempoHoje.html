@@ -1,0 +1,77 @@
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<div id="texto"></div>
+
+<script language="JavaScript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+var idApp = "&APPID={APIKEY}";
+var cityRio = "http://api.openweathermap.org/data/2.5/forecast/daily?id=3451189&lang=pt&units=metric"+idApp;
+clima(cityRio);
+var cidade;
+
+function clima(url){
+
+
+	$.getJSON(url, function ( data ) {
+		  $.each( data, function( key, city) {
+
+		  	if (city.country == 'BR' && city.id != null){
+				if (city.name == 'Estado do Rio de Janeiro'){
+  		  		 	cidade = 'Rio de Janeiro'
+ 		  			$("#cidade").append(cidade);
+ 
+				 }	else {
+ 		  		 	cidade = city.name;
+		  			$("#cidade").append(cidade);
+
+						}
+			}
+
+			var temperature = data.list[0].temp;
+			if (city[0] != null && city[0] != 2){
+				
+ 		    	 var tempo = city[0].weather[0].description;
+ 				 var tempoHoje = temperature.day;
+				 value = parseFloat(tempoHoje).toFixed(0);
+			var texto = cidade+", "+dataAtual()+", temperatura de "+value+"°"+" com "+tempo;		
+			 $("#texto").append(texto);		
+			}
+
+	
+		    });
+	});
+}
+
+function dataAtual(){
+	var hoje = new Date();
+	var dd = hoje.getDate();
+	var mm = hoje.getMonth()+1; //January is 0!
+	var yyyy = hoje.getFullYear();
+	var dia = hoje.getDay();
+        var semana = new Array(6);
+        semana[0]='Domingo';
+        semana[1]='Segunda-Feira';
+        semana[2]='Terça-Feira';
+        semana[3]='Quarta-Feira';
+        semana[4]='Quinta-Feira';
+        semana[5]='Sexta-Feira';
+        semana[6]='Sábado';
+        diaSemana = semana[dia];
+
+		if(dd<10) {
+    			dd = '0'+dd
+		} 
+
+		if(mm<10) {
+    			mm = '0'+mm
+		} 
+hoje = dd + '/' + mm + '/' + yyyy;
+var hojeCompleto = diaSemana+" "+hoje;
+return hojeCompleto;
+}
+
+</script>
+</head>
+</html>
