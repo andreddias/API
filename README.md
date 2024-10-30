@@ -35,11 +35,11 @@ Em um outro exemplo foi criado o site [saudelisboa](http://saudelisboa.wixsite.c
 
 ## Centros de Saúde 
 
-Encontre o centro de saúde desejado, após selecionar a morada são exibidos os centros de saúde do sítio desejado em uma tabela. Veja o [código](https://github.com/andreddias/javascript/blob/master/centrosaude.html).
+Encontre o centro de saúde desejado, após selecionar a morada são exibidos os centros de saúde do sítio desejado em uma tabela. Veja o [código](https://github.com/andreddias/API/blob/master/centrosaude.html).
 
 ## Farmácias
 
-Encontre a farmácia desejada. Após selecionar a farmácia são exibidos os dados de contato. Veja o [código](https://github.com/andreddias/javascript/blob/master/farmacia.html).
+Encontre a farmácia desejada. Após selecionar a farmácia são exibidos os dados de contato. Veja o [código](https://github.com/andreddias/API/blob/master/farmacia.html).
 
 # Weather
 
