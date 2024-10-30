@@ -43,7 +43,7 @@ Encontre a farmácia desejada. Após selecionar a farmácia são exibidos os dad
 
 ## Weather
 
-Previsão do tempo. É necessário criar uma chave de API, você pode ler a referência e o help [aqui](https://openweathermap.org/appid). Veja o [código](https://github.com/andreddias/API/blob/master/climatempoHoje.html)
+Previsão do tempo. É necessário criar uma chave de API, você pode ler a [referência](https://openweathermap.org/appid). Veja o [código](https://github.com/andreddias/API/blob/master/climatempoHoje.html)
 
 ## Fontes:  
 #### Urls utilizadas do site Dados abertos do governo brasileiro:  
