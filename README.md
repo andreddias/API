@@ -31,7 +31,19 @@ Neste exemplo mostramos cada campo, mas você pode realizar a regressão de todo
 
 No meu [site pessoal](http://andreddias.wixsite.com/home/cambio) demonstro como utilizar os dados recebidos na API, utilizei como exemplo a cotação do Dólar comercial de compra e venda no formato Json, no site foi utilizado html e JavaScript para receber os dados. Você pode ver o código fonte [aqui](cotacoes.html)
 
-Em um outro exemplo foi criado o site [saudelisboa](http://saudelisboa.wixsite.com/meusite) que retorna os dados abertos de Lisboa referente a saúde, [aqui](http://lisboaaberta.cm-lisboa.pt/index.php/pt/) você pode ver todos os dados abertos disponíveis, com este site você pode realizar seu primeiro teste de uma API.
+Em um outro exemplo foi criado o site [saudelisboa](http://saudelisboa.wixsite.com/meusite) que retorna os dados abertos de Lisboa referente a saúde, [aqui](http://lisboaaberta.cm-lisboa.pt/index.php/pt/) 
+
+## Centros de Saúde 
+
+Encontre o centro de saúde desejado, após selecionar a morada são exibidos os centros de saúde do sítio desejado em uma tabela. Veja o [código](https://github.com/andreddias/javascript/blob/master/centrosaude.html).
+
+## Farmácias
+
+Encontre a farmácia desejada. Após selecionar a farmácia são exibidos os dados de contato. Veja o [código](https://github.com/andreddias/javascript/blob/master/farmacia.html).
+
+# Weather
+
+Previsão do tempo. É necessário criar uma chave de API, você pode ler a referência e o help [aqui](https://openweathermap.org/appid).
 
 ## Fontes:  
 #### Urls utilizadas do site Dados abertos do governo brasileiro:  
