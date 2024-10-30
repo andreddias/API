@@ -41,9 +41,9 @@ Encontre o centro de saúde desejado, após selecionar a morada são exibidos os
 
 Encontre a farmácia desejada. Após selecionar a farmácia são exibidos os dados de contato. Veja o [código](https://github.com/andreddias/API/blob/master/farmacia.html).
 
-# Weather
+## Weather
 
-Previsão do tempo. É necessário criar uma chave de API, você pode ler a referência e o help [aqui](https://openweathermap.org/appid).
+Previsão do tempo. É necessário criar uma chave de API, você pode ler a referência e o help [aqui](https://openweathermap.org/appid). Veja o [código](https://github.com/andreddias/API/blob/master/climatempoHoje.html)
 
 ## Fontes:  
 #### Urls utilizadas do site Dados abertos do governo brasileiro:  
